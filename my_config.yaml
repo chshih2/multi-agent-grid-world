@@ -1,0 +1,13 @@
+task:
+  do_train: False
+  data_dir: "./dev_results/"
+train:
+  steps_per_epoch: 20
+  epochs: 2000
+  policy_lr: 3.0e-4
+  critic_lr: 5.0e-4
+env:
+  env_name: "multi-agent" # push / throw / catch
+  central: False
+  num_envs: 1
+  num_agent: 2
